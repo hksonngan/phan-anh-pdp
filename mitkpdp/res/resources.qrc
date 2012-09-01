@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="home">
+    <file>res/home/icon.png</file>
+    <file>res/home/preview_multi.png</file>
+    <file>res/home/preview_single.png</file>
+  </qresource>
+  <qresource prefix="single_thickenings">
+    <file>res/single_thickenings/icon.png</file>
+  </qresource>
+  <qresource prefix="common">
+    <file>res/common/wrench.png</file>
+    <file>res/common/user.png</file>
+    <file>res/common/openfile.png</file>
+    <file>res/common/back.png</file>
+  </qresource>
+  <qresource prefix="single_load">
+    <file>res/single_load/icon.png</file>
+  </qresource>
+</RCC>

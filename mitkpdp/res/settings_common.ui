@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsCommon</class>
+ <widget class="QWidget" name="SettingsCommon">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>434</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Allgemeine Einstellungen</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/common/res/common/wrench.png</normaloff>:/common/res/common/wrench.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+	border: none;
+	padding-left: 10px;
+    font-size: 14px;
+    padding-top: 20px;
+}
+QGroupBox QLabel {
+	padding-right: 15px;
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Allgemein</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>DICOM</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Standardspeicherort</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="txtStandardDICOMPath">
+            <property name="toolTip">
+             <string>Klicken, um Speicherort neu festzulegen</string>
+            </property>
+            <property name="statusTip">
+             <string>Klicken, um Speicherort neu festzulegen</string>
+            </property>
+            <property name="whatsThis">
+             <string>Klicken, um Speicherort neu festzulegen</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>txtStandardDICOMPath</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SettingsCommon</receiver>
+   <slot>OnStandardDICOMPathChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>278</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnStandardDICOMPathChanged(QString)</slot>
+ </slots>
+</ui>

@@ -1,0 +1,46 @@
+<RCC>
+  <qresource prefix="threeDEditing">
+    <file>res/threeDEditing/vol2.png</file>
+    <file>res/threeDEditing/stop.png</file>
+    <file>res/threeDEditing/fotoapparat.png</file>
+    <file>res/threeDEditing/1.png</file>
+    <file>res/threeDEditing/volume.png</file>
+    <file>res/threeDEditing/2.png</file>
+    <file>res/threeDEditing/Backward.png</file>
+    <file>res/threeDEditing/Backward_01.png</file>
+    <file>res/threeDEditing/Forward.png</file>
+    <file>res/threeDEditing/Forward_01.png</file>
+    <file>res/threeDEditing/left.png</file>
+    <file>res/threeDEditing/pause.png</file>
+    <file>res/threeDEditing/right.png</file>
+    <file>res/threeDEditing/Annotation.png</file>
+    <file>res/threeDEditing/Convert.png</file>
+    <file>res/threeDEditing/CrossArrowCoronal.png</file>
+    <file>res/threeDEditing/CrossArrowTranslateCoronal.png</file>
+    <file>res/threeDEditing/CrossArrowTranslateSagittal.png</file>
+    <file>res/threeDEditing/CrossArrowTranslateTransversal.png</file>
+    <file>res/threeDEditing/CrossArrowSagittal.png</file>
+    <file>res/threeDEditing/CrossArrowTransversal.png</file>
+    <file>res/threeDEditing/CrossArrow.png</file>
+    <file>res/threeDEditing/Redo_48.png</file>
+    <file>res/threeDEditing/Undo_48.png</file>
+    <file>res/threeDEditing/Orientation.png</file>
+    <file>res/threeDEditing/Color.png</file>
+    <file>res/threeDEditing/View.png</file>
+    <file>res/threeDEditing/print.png</file>
+    <file>res/threeDEditing/mousepointer.png</file>
+    <file>res/threeDEditing/Segmentation.png</file>
+    <file>res/threeDEditing/DataManager.png</file>
+    <file>res/threeDEditing/volumerendering32.png</file>
+    <file>res/threeDEditing/data-type-mesh-24.png</file>
+    <file>resources_threeDEditing.qrc</file>
+    <file>res/threeDEditing/propertylist.png</file>
+    <file>res/threeDEditing/Delete-32.png</file>
+    <file>res/threeDEditing/Open-32.png</file>
+    <file>res/threeDEditing/Save-32.png</file>
+    <file>res/threeDEditing/CreateSurface-32.png</file>
+    <file>res/threeDEditing/MoveObject-32.png</file>
+    <file>res/threeDEditing/Rubber-32.png</file>
+    <file>res/threeDEditing/Refresh-32.png</file>
+  </qresource>
+</RCC>
