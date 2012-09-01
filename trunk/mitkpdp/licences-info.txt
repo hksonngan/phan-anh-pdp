@@ -1,0 +1,3 @@
+This program uses icons from the Tango icon set. This icon set is public domain. See http://tango.freedesktop.org/
+
+This program uses MITK which is licensed under the BSD license. See its sourcecode folder for details about the license and the licenses of the packages it uses.
