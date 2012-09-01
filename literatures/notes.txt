@@ -1,0 +1,14 @@
+- 1st priority: 3d live wire => live plane
+- 2nd Voxel representation or meta model between voxel and surface
+- 3rd CUDA
+- 4th interaction
+
+references:
+- 3D Live-Wires on Mosaic Volumes 
+
+
+
+
+
+
+Applications: Interactive 3D Segmentation: grabcut (graph cuts, st cuts)

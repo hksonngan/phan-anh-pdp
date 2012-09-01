@@ -1,0 +1,4 @@
+- laplacian zero-crossing: convolution the image with Laplacian gives the output image. For each pixel p in the output image check 2 cases: I(p) = 0, or sign(ne(p)) != sign(p).
+- gradient orientation: q is a neighbor of p so q must agree with the orientation of p and the vector pq. L(p, q) is the normalized (i.e. unit) bidirectional link or edge vector between pixels p and q and simply
+returns the direction of the link between p and q such that the difference between p and the
+direction of the link is minimized (i.e. <= pi/2).
