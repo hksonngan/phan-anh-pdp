@@ -365,7 +365,7 @@ install(FILES "${QT_BINARY_DIR}/QtWebKit4.dll" DESTINATION bin)
 install(FILES "${QT_BINARY_DIR}/QtWebKitd4.dll" DESTINATION bin)
 
 ADD_CUSTOM_TARGET(run)
-ADD_CUSTOM_COMMAND(TARGET run POST_BUILD COMMAND pdp.exe WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../pdp-inst/bin/)
+ADD_CUSTOM_COMMAND(TARGET run POST_BUILD COMMAND pdp.exe WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../install/bin/)
 ADD_DEPENDENCIES(run ALL INSTALL pdp)
 
 # Adding tools
@@ -387,7 +387,7 @@ ADD_SUBDIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/../SVN/ThreeDEditing/Tools/BulgeToo
 ADD_CUSTOM_TARGET(CopyAllDll)
 ADD_CUSTOM_COMMAND(TARGET CopyAllDll
           POST_BUILD
-          COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/CMakeLists.txt/BulgeTool/Release/mitkBulgeTool.dll ${CMAKE_CURRENT_BINARY_DIR}/../SVN/ThreeDEditing/Tools/Tools/
+          COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/CMakeLists.txt/BulgeTool/Release/mitkBulgeTool.dll ${CMAKE_CURRENT_BINARY_DIR}/../../Hendrik_pdp/SVN/ThreeDEditing/Tools/Tools/
           #COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/CMakeLists.txt/CutTool/Release/mitkCutTool.dll ${CMAKE_CURRENT_BINARY_DIR}/../SVN/ThreeDEditing/Tools/Tools/     
           #COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/CMakeLists.txt/FillHoleTool/Release/mitkFillHoleTool.dll ${CMAKE_CURRENT_BINARY_DIR}/../SVN/ThreeDEditing/Tools/Tools/
           #COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/CMakeLists.txt/MoveROITool/Release/mitkExternalTools.dll ${CMAKE_CURRENT_BINARY_DIR}/../SVN/ThreeDEditing/Tools/Tools/

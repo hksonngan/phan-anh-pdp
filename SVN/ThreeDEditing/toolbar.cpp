@@ -205,7 +205,7 @@ void pdp::Toolbar::OpenFile()
 	}
 	else
 	{
-		fileNames = QFileDialog::getOpenFileNames(NULL, "Open", "D:\\hachmann\\Data", "*" );
+		fileNames = QFileDialog::getOpenFileNames(NULL, "Open", "E:\\Media Informatics\\thesis\\Hendrik_PhanAnh_pdp\\PA_Hendrik\\PA_Hendrik\\pdp\\Hendrik_pdp\\data", "*" );
 		
 	}
 
