@@ -1369,6 +1369,7 @@ void pdp::ThreeDEditing::SecondScenario()
 	mitk::DataNodeFactory::Pointer nodeReader = mitk::DataNodeFactory::New();
   
 	// Adding file/image to the DataNodeFactory
+	/*
 	if(AT_HOME == 1)
 	{
 		files.push_back("C:\\DA\\Data\\Scenario2\\Scenario_2_ReferenceImage.nrrd");
@@ -1383,6 +1384,7 @@ void pdp::ThreeDEditing::SecondScenario()
 		files.push_back("D:\\hachmann\\Data\\Scenario2\\Scenario_2_Segmentation_2D.nrrd");
 		files.push_back("D:\\hachmann\\Data\\Scenario2\\GoldStandard.stl");
 	}
+	//*/
 
 	for(int i = 0; i < files.size(); i++)
 	{
@@ -2026,8 +2028,10 @@ void pdp::ThreeDEditing::StartSegmentation()
 	std::cout << "ciao from " << __FUNCSIG__ << std::endl;	
 }
 
+///*
 void pdp::ThreeDEditing::TimerEvent()
 {
+	return;
 	std::string addString = "Add";
 	std::string substractString = "Subtract";
 	std::string paintString = "Paint";
@@ -2341,6 +2345,7 @@ void pdp::ThreeDEditing::TimerEvent()
 		m_Play = true;
 	}
 }
+//*/
 
 void pdp::ThreeDEditing::UseMITKSegmentationTools()
 {
@@ -2626,7 +2631,7 @@ void pdp::ThreeDEditing::AutoLoadFile()
 		//files.push_back("C:\\DA\\Data\\DetectedThickenings\\Surface 4.stl");
 		//files.push_back("C:\\DA\\Data\\DetectedThickenings\\Surface 5.stl");
 		//files.push_back("C:\\DA\\Data\\DetectedThickenings\\Surface 6.stl");
-		files.push_back("C:\\DA\\Data\\DetectedThickenings\\Surface 6_MissingTop.stl");
+		//files.push_back("C:\\DA\\Data\\DetectedThickenings\\Surface 6_MissingTop.stl");
 
 		/*files.push_back("C:\\DA\\Data\\DetectedThickenings\\Surface 8.stl");
 		files.push_back("C:\\DA\\Data\\DetectedThickenings\\Surface 10.stl");		
@@ -2656,7 +2661,7 @@ void pdp::ThreeDEditing::AutoLoadFile()
 		//files.push_back("D:\\hachmann\\Data\\HalfBinary.stl");
 		//files.push_back("D:\\hachmann\\Data\\HalfBinary2.stl");
 		//files.push_back("D:\\hachmann\\Data\\ClippedPartOfBallWithHole.stl");
-		//files.push_back("D:\\hachmann\\Data\\ClippedPartOfBallWithHole2.stl");
+		files.push_back("E:\\Media Informatics\\thesis\\Hendrik_PhanAnh_pdp\\PA_Hendrik\\PA_Hendrik\\pdp\\Hendrik_pdp\\data\\octopusLegMissing.stl");
 
 		//files.push_back("D:\\hachmann\\Data\\EvaluationScenario\\Box.stl");
 		//files.push_back("D:\\hachmann\\Data\\EvaluationScenario\\Half Box 4.stl");
@@ -2671,7 +2676,7 @@ void pdp::ThreeDEditing::AutoLoadFile()
 		//files.push_back("D:\\hachmann\\Data\\DetectedThickenings\\Surface 4.stl");
 		//files.push_back("D:\\hachmann\\Data\\DetectedThickenings\\Surface 5.stl");
 		//files.push_back("D:\\hachmann\\Data\\DetectedThickenings\\Surface 6.stl");
-		files.push_back("D:\\hachmann\\Data\\DetectedThickenings\\Surface 6_MissingTop.stl");
+		//files.push_back("D:\\hachmann\\Data\\DetectedThickenings\\Surface 6_MissingTop.stl");
 
 		/*files.push_back("D:\\hachmann\\Data\\DetectedThickenings\\Surface 8.stl");
 		files.push_back("D:\\hachmann\\Data\\DetectedThickenings\\Surface 10.stl");		
