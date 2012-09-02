@@ -10,5 +10,6 @@ references:
 coding:
 - void pdp::Toolbar::GetCurrentDataStorage();
 - void pdp::DataManager::ReinitSelectedNodes(bool);
+- On application startup the ITK object factory will search a list of directories from the environment variable ITK_AUTOLOAD_PATH. Set this environment variable to your binary directory (containing the dll file).
 - http://docs.mitk.org/nightly-qt4/classQmitkToolSelectionBox.html
 - http://docs.mitk.org/nightly-qt4/toolextensions.html
