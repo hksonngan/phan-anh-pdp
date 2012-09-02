@@ -91,7 +91,7 @@ pdp::ThreeDEditing::ThreeDEditing(MainWindow* mainwin)
 	}
 	else
 	{
-		mitk::GlobalInteraction::GetInstance()->GetStateMachineFactory()->LoadBehavior("D:\\hachmann\\SVN\\ThreeDEditing\\StateMachine.xml");
+		mitk::GlobalInteraction::GetInstance()->GetStateMachineFactory()->LoadBehavior("E:\\Media Informatics\\thesis\\Hendrik_PhanAnh_pdp\\PA_Hendrik\\PA_Hendrik\\pdp\\Hendrik_pdp\\SVN\\ThreeDEditing\\StateMachine.xml");
 		//mitk::GlobalInteraction::GetInstance()->GetStateMachineFactory()->LoadBehavior("LocalStateMachine.xml");
 	}
 
