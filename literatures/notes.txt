@@ -1,14 +1,14 @@
-- 1st priority: 3d live wire => live plane
+- 1st priority: 3d live wire => live mesh
 - 2nd Voxel representation or meta model between voxel and surface
 - 3rd CUDA
 - 4th interaction
 
 references:
 - 3D Live-Wires on Mosaic Volumes 
+- Interactive 3D Segmentation: grabcut (graph cuts, st cuts) => comparison between many methods including live wire.
 
-
-
-
-
-
-Applications: Interactive 3D Segmentation: grabcut (graph cuts, st cuts)
+coding:
+- void pdp::Toolbar::GetCurrentDataStorage();
+- void pdp::DataManager::ReinitSelectedNodes(bool);
+- http://docs.mitk.org/nightly-qt4/classQmitkToolSelectionBox.html
+- http://docs.mitk.org/nightly-qt4/toolextensions.html
