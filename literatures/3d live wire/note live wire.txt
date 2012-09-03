@@ -2,3 +2,7 @@
 - gradient orientation: q is a neighbor of p so q must agree with the orientation of p and the vector pq. L(p, q) is the normalized (i.e. unit) bidirectional link or edge vector between pixels p and q and simply
 returns the direction of the link between p and q such that the difference between p and the
 direction of the link is minimized (i.e. <= pi/2).
+- laplacian kernels are normalized to be comparable when finding the max kernel value.
+- the 4 precomputed images are calculated according to equation 10 in scissors paper. These feature images are sampled to both create dynamic histograms (which are then scaled, weighted, and inverted to create
+cost maps) and as indices into the dynamic feature cost maps when computing link costs.
+- A maximum local link cost, M, (to its neighbor in the training set) specifies the largest integer cost possible through summation of feature cost components (sum all features for each element then compare). there is a minimal sample size s determining the reliable sample size otherwise we have to combine with the static gradient function.

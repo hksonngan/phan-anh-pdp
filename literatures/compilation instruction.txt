@@ -1,0 +1,10 @@
+- make sure to also change mitk, itk, cgal path in the pdp CMakeLists file
+- set the mitk path in the CmakeLists.txt for every tool.
+- change itk path in cmake gui (and perhaps in some CMakeLists file)
+- in Bulge tool:
+set(MITK_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../../pdp-mitk/MITK" CACHE PATH "Path to the MITK source folder")
+set(MITK_BINARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../../pdp-mitk-build/mitk-build-64-rel/MITK-build" CACHE PATH "Path to the MITK superbuild folder to link to")
+
+- bulge tool: binary dir = hendrik pdp: build dir/MITK-build
+
+- bulge tool does not include mitkCoreExt???

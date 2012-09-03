@@ -1,0 +1,2 @@
+- if MITK fails to write in a file due to multithreading conflict: let it finish the build and run build the second time.
+- remember to switch to the Release mode in pdp.sln as well
