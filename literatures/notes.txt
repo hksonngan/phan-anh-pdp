@@ -18,3 +18,7 @@ approaches and improvements:
 - extrude in the z direction with some +/- error tolerance proportion to the z-spacing and apply 2d live wire
 - gradient in 3D, geodesic, marching cube idea.
 - exponential cost function and other kinds, no need to quantize the cost with general priority queue.
+- volume rendering and live mesh + similar intensity => marching cube and region growing. => maximize betweeness and minimize intra-object.
+- guided marching cube, radio wave propagation, crack propagation, model stress tensor, material property.
+- dynamics => flow => curvature flow => active contour :((
+- 3D live mesh is not promising. => switch to active surface model => juelich
