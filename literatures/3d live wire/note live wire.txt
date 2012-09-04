@@ -6,4 +6,7 @@ direction of the link is minimized (i.e. <= pi/2).
 - the 4 precomputed images are calculated according to equation 10 in scissors paper. These feature images are sampled to both create dynamic histograms (which are then scaled, weighted, and inverted to create
 cost maps) and as indices into the dynamic feature cost maps when computing link costs.
 - A maximum local link cost, M, (to its neighbor in the training set) specifies the largest integer cost possible through summation of feature cost components (sum all features for each element then compare this is global max including Laplacian and gradient direction). there is a minimal sample size s determining the reliable sample size otherwise we have to combine with the static gradient function. Each cost term is attached with a corresponding scale w.M where w is the initial weight in equation 1.
-- in Dijktra algorithm, the active list is sorted based on the cumulative cost => priority queue. The current node is the node having minimal cost from the queue. the implementation in the paper can have the cumulative cost out of local cost range index in the queue. => std::priority_queue.
+- in Dijkstra algorithm, the active list is sorted based on the cumulative cost => priority queue. The current node is the node having minimal cost from the queue. the implementation in the paper can have the cumulative cost out of local cost range index in the queue. => std::priority_queue.
+- it is inefficient to implement priority queue in cuda.
+- delta stepping algorithm is the parallel version of Dijkstra see:
+http://code.google.com/p/gpuwire/
