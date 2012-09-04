@@ -10,3 +10,4 @@ cost maps) and as indices into the dynamic feature cost maps when computing link
 - it is inefficient to implement priority queue in cuda.
 - delta stepping algorithm is the parallel version of Dijkstra see:
 http://code.google.com/p/gpuwire/
+- seed point expansion through the Dijkstra wavefront and then back tracking from the target free point to the seed point. Since every pixel inside the expanding wavefront already has an optimal path, the goal of interleaving is to keep the wavefront expansion ahead of cursor movement. If the free point moves faster than, and moves outside of, the expanding wavefront then no path is available and therefore no “live-wire” is displayed until the wavefront catches up to the cursor position.
