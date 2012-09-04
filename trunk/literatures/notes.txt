@@ -16,4 +16,5 @@ coding:
 
 approaches and improvements:
 - extrude in the z direction with some +/- error tolerance proportion to the z-spacing and apply 2d live wire
-- exponential cost function and other kinds
+- gradient in 3D, geodesic, marching cube idea.
+- exponential cost function and other kinds, no need to quantize the cost with general priority queue.
