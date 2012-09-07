@@ -22,3 +22,6 @@ approaches and improvements:
 - guided marching cube, radio wave propagation, crack propagation, model stress tensor, material property.
 - dynamics => flow => curvature flow => active contour :((
 - 3D live mesh is not promising. => switch to active surface model => juelich
+
+- scale for snake: one can allow the snake to come to equilibrium on a very blurry energy functional and then slowly reduce the blurring. The result is minimization by scale-continuation.
+- 3D live wire is not promising, the sphere tool is not intuitive, snake has good interation tool => combination of 2D live wire and 3D active surface model in cuda.
