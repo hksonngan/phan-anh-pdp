@@ -1,0 +1,4 @@
+- angle in radian: theta = L/R where L is the arc length. then 1/R = theta/L = curvature. Curvature of the curve at the point P: pick a small curve segment around P, it corresponds to the arc of a very big circle somewhere then just compute: d(theta)/d(length).
+- If the tangents at the ends of the segment are represented by unit vectors, it is easy to show that in this limit, the magnitude of the difference vector is equal to d(theta).
+- In the limit dT/ds will be in the direction N and the curvature describes the speed of rotation of the frame: T'(s) = k(s).N(s) where the curve has been reparameterized w.r.t. arc length s.
+- curvature of level contours: k = div.(grad(I(x, y))), see "Active Contours without Edges and Curvature Analysis for Endoscopic Image Classification".
