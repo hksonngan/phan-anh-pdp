@@ -8,3 +8,5 @@ dN/ds = (dNx/ds, dNy/ds) => chain rule (dN/dx . dx/ds, dN/dy . dy/ds)
 				   0,	dN/dy
 				   
 this is the proof of snake: curvature of level contour.
+
+- An earlier approach to corner detection is to detect points where the curvature of level curves and the gradient magnitude are simultaneously high. A differential way to detect such points is by computing the rescaled level curve curvature (the product of the level curve curvature and the gradient magnitude raised to the power of three) => snake terminates at corners.
