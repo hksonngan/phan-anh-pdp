@@ -13,3 +13,4 @@ http://code.google.com/p/gpuwire/
 - seed point expansion through the Dijkstra wavefront and then back tracking from the target free point to the seed point. Since every pixel inside the expanding wavefront already has an optimal path, the goal of interleaving is to keep the wavefront expansion ahead of cursor movement. If the free point moves faster than, and moves outside of, the expanding wavefront then no path is available and therefore no “live-wire” is displayed until the wavefront catches up to the cursor position.
 - Schenk et al. have optimized this process by only computing the cost for successive slices on regions that fall within a given distance from a reference slice’s completed boundary. A distance map, showing
 distances from the reference slice’s boundary, is generated using a chamfering process.
+- expended restricted search: bull shit.
