@@ -29,3 +29,9 @@ approaches and improvements:
 - http://www.youtube.com/watch?v=7wCC2NaVLjs&feature=related
 
 - active contour is good because it has the term for feature points attraction.
+
+- the back of thickening is anchored by some spring model.
+
+- live wire in 3D => model the 3D neighborhood: 26 neighbors.
+
+- Live Wire performed better than SimpleSeg in both repeatability and segmentation time. We observed that the users learned Live Wire more quickly than Live Mesh, largely due to the fact that they had difficulty navigating and interacting in the three-dimensional SimpleSeg interface.
