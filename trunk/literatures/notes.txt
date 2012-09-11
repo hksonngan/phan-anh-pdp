@@ -35,3 +35,7 @@ approaches and improvements:
 - live wire in 3D => model the 3D neighborhood: 26 neighbors.
 
 - Live Wire performed better than SimpleSeg in both repeatability and segmentation time. We observed that the users learned Live Wire more quickly than Live Mesh, largely due to the fact that they had difficulty navigating and interacting in the three-dimensional SimpleSeg interface.
+
+- live wire snaps to corners term.
+
+- The main advantages of using level sets is that arbitrarily complex shapes can be modeled and topological changes such as merging and splitting are handled implicitly.
