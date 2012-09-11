@@ -27,6 +27,8 @@ approaches and improvements:
 - 3D live wire is not promising, the sphere tool is not intuitive, snake has good interation tool => combination of 2D live wire and 3D active surface model in cuda.
 
 - http://www.youtube.com/watch?v=7wCC2NaVLjs&feature=related
+http://www.youtube.com/watch?NR=1&v=75oVE86HeqU&feature=endscreen
+http://www.youtube.com/watch?v=UQZAcijZTq8&feature=related
 
 - active contour is good because it has the term for feature points attraction.
 
