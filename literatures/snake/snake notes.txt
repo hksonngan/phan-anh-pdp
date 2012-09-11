@@ -10,3 +10,10 @@ dN/ds = (dNx/ds, dNy/ds) => chain rule (dN/dx . dx/ds, dN/dy . dy/ds)
 this is the proof of snake: curvature of level contour.
 
 - An earlier approach to corner detection is to detect points where the curvature of level curves and the gradient magnitude are simultaneously high. A differential way to detect such points is by computing the rescaled level curve curvature (the product of the level curve curvature and the gradient magnitude raised to the power of three) => snake terminates at corners.
+
+- http://en.wikipedia.org/wiki/Hamiltonian_mechanics
+http://en.wikipedia.org/wiki/Poisson_bracket
+http://en.wikipedia.org/wiki/Canonical_coordinates
+http://en.wikipedia.org/wiki/Geodesic
+Hamiltonian H = T + V, where T: kinetic energy - 1/2.mv^2, and V: potential energy
+and the Lagrangian, or difference between kinetic and potential energy, is: L = T - V
