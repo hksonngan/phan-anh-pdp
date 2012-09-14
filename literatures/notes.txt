@@ -42,4 +42,4 @@ http://www.youtube.com/watch?v=UQZAcijZTq8&feature=related
 
 - The main advantages of using level sets is that arbitrarily complex shapes can be modeled and topological changes such as merging and splitting are handled implicitly.
 
-- specify the wall constraint by snake and set the intensity to limit of the level set so the level set can not evolve to the wall.
+- specify the wall constraint by snake and set the intensity to limit of the level set so the level set can not evolve to the wall. Leventon-Grimson-Faugeras-etal (2000) shape priors.
