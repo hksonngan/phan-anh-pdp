@@ -17,3 +17,5 @@ http://en.wikipedia.org/wiki/Canonical_coordinates
 http://en.wikipedia.org/wiki/Geodesic
 Hamiltonian H = T + V, where T: kinetic energy - 1/2.mv^2, and V: potential energy
 and the Lagrangian, or difference between kinetic and potential energy, is: L = T - V
+
+- smeared-out Heaviside (in the level set book) is used to compute the volume and surface but we can use the exact method from Pothier (volume gradient).
