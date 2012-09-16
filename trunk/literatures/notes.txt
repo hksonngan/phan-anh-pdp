@@ -45,3 +45,5 @@ http://www.youtube.com/watch?v=UQZAcijZTq8&feature=related
 - specify the wall constraint by snake and set the intensity to limit of the level set so the level set can not evolve to the wall. Leventon-Grimson-Faugeras-etal (2000) shape priors.
 
 - snake in one slice as training example then level set in 3D
+
+- even without edge: Fig. 9. Object with smooth contour. Top: results using our model without edge-function. Bottom: results using the classical model (2) with edge-function.
