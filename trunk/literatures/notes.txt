@@ -46,4 +46,4 @@ http://www.youtube.com/watch?v=UQZAcijZTq8&feature=related
 
 - snake in one slice as training example then level set in 3D
 
-- even without edge: Fig. 9. Object with smooth contour. Top: results using our model without edge-function. Bottom: results using the classical model (2) with edge-function.
+- even without edge: Fig. 9. Object with smooth contour. Top: results using our model without edge-function. Bottom: results using the classical model (2) with edge-function. Region based level set method.
