@@ -48,4 +48,6 @@ http://www.youtube.com/watch?v=UQZAcijZTq8&feature=related
 
 - even without edge: Fig. 9. Object with smooth contour. Top: results using our model without edge-function. Bottom: results using the classical model (2) with edge-function. Region based level set method.
 
-- withou edge resolves plaques, GVF is better than traditional snake may resolve interactive => combine.
+- without edge resolves plaques, GVF is better than traditional snake may resolve interactive => combine.
+
+- modify mesh created by level set taking into account intensity forces or live mesh.
