@@ -1,7 +1,9 @@
-http://developer.nvidia.com/cuda/cuda-education-training
-
 - in reduction example
 	    // warm-up
         reduce<T>(size, numThreads, numBlocks, whichKernel, d_idata, d_odata);
 	the above command does not affect anything because d_idata is intact and d_odata is not processed and will get overrided later on.
 	Blocks cannot synchronize so reduce_kernel is called multiple times: First call reduces from numValues to numThreads. Each subsequent call reduces by half. Ping pong between input and output buffers
+	
+- thrust, OpenCL
+
+- NPP library: designed for image processing
