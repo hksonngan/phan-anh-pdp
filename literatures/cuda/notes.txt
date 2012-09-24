@@ -7,3 +7,6 @@
 - thrust, OpenCL
 
 - NPP library: designed for image processing
+
+- Level set:
+	http://code.google.com/p/cudaseg/
