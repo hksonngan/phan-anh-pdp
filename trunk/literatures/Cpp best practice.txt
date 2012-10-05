@@ -1,0 +1,15 @@
+- return const & from function: no need to make a copy when the function return T; The returned value usually get copied to a new variable. Hence reducing redundant copy. When there is no assigned variable, the returned version is the function call.
+
+- pass by reference: to modify a variable inside the function.
+
+- deep vs. shallow coppy: pass std::vector by iterators or by reference.
+Accept a vector<int> const& and use iterators or pass iterators directly to the function.
+A pair of iterators is already the "shallow copy you want".
+
+Pass the vector as is, either by value (where the compiler will often eliminate the copy), or by (const) reference, and trust the compiler to eliminate the double indirection, or
+Pass an iterator pair.
+Of course you can argue that the iterator pair is "less natural syntax", but I disagree. It is perfectly natural to anyone who's used to the STL. It is efficient, and gives you exactly what you need to work with the range, using std algorithms or your own functions.
+
+Iterator pairs are a common C++ idiom, and a C++ programmer reading your code will understand them without a problem, whereas they're going to be surprised at your home-brewed vector wrappers.
+
+If you're really paranoid about performance, pass the pair of iterators. If the syntax really bothers you, pass the vector and trust the compiler.
