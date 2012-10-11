@@ -1,0 +1,10 @@
+- Chan-Vese operates on voxel data. parameter estimation, add user force terms.
+
+- graph cut: works on voxel data. put anchors, weight to make the cut run through it.
+
+- convert between voxel and mesh. marching cube, convert back. feature detection => extended marching cube.
+data structure: store all information.
+
+- gradient field, signed distance field.
+
+- Hendrik idea about live wire in 3D: triangulate the live wire.
