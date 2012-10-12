@@ -7,4 +7,21 @@ data structure: store all information.
 
 - gradient field, signed distance field.
 
+- Chan-vese: he use existing itk framework. He modified to make the navigation bar and parameter config bar. However, he did not use Spring force in ITK.
+
+- make a quick test to se what happens then think more.
+
+- Chan-vese: integrate drag, spring and push tools for each iteration => conversion is important since it can improve performance and precision. (currently it is slow and not accurate).
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//He is doing only in live-wire
 - Hendrik idea about live wire in 3D: triangulate the live wire.
+- make the cross from the free point: in xy plane, and in z direction (zx or zy). from the cross make the geometry out of it.
+////////////////////////////////////////////////////////////////////////////////////////////
+
+- jump to the middle slice (using arrow key) and refine the segmentation made by interpolating the start and end slices.
+
+- combine live-wire and bulge tools
+
+- the wall is solved by Laplacian framework.
+
