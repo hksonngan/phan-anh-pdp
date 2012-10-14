@@ -18,4 +18,5 @@ http://en.wikipedia.org/wiki/Geodesic
 Hamiltonian H = T + V, where T: kinetic energy - 1/2.mv^2, and V: potential energy
 and the Lagrangian, or difference between kinetic and potential energy, is: L = T - V
 
-- smeared-out Heaviside (in the level set book) is used to compute the volume and surface but we can use the exact method from Pothier (volume gradient).
+- However, since most (if not all) of the Cartesian grid points will not lie on the interface, most of the points on our Cartesian mesh have velocity V
+identically equal to zero, causing the V.grad(phi) term in equation (3.2) to vanish. This in turn implies that d(phi)/dt = 0 almost everywhere, so that the interface mostly (or completely if no points happen to fall on the interface) incorrectly sits still. => parameter of level set from Hendrik (overshooting) => heaviside function in Chan-Vese.

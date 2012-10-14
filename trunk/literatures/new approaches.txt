@@ -1,6 +1,6 @@
 - Heaviside in Chan-Vese; conversion using finite elements as oppose to finite difference (mesh vs voxel). first extract mesh using EMC.
 
-- Chan-Vese operates on voxel data. parameter estimation, add user force terms.
+- Chan-Vese operates on voxel data. parameter estimation, add user force terms as source or sink or spring force.
 
 - graph cut: works on voxel data. put anchors, weight to make the cut run through it.
 
