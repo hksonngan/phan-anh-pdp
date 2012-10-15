@@ -1,6 +1,10 @@
+- ALE: Lagrange explicitly tracking of the boundary. This results in the distortion of the boundary mesh. => mesh surgery.
+Euler model boundary by an implicit level set function which is usually a sign distance function.
+
 - Heaviside in Chan-Vese; conversion using finite elements as oppose to finite difference (mesh vs voxel). first extract mesh using EMC.
 
 - Chan-Vese operates on voxel data. parameter estimation, add user force terms as source or sink or spring force.
+Or prescribed external velocity field.
 
 - graph cut: works on voxel data. put anchors, weight to make the cut run through it.
 
