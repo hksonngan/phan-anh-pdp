@@ -20,3 +20,7 @@ and the Lagrangian, or difference between kinetic and potential energy, is: L = 
 
 - However, since most (if not all) of the Cartesian grid points will not lie on the interface, most of the points on our Cartesian mesh have velocity V
 identically equal to zero, causing the V.grad(phi) term in equation (3.2) to vanish. This in turn implies that d(phi)/dt = 0 almost everywhere, so that the interface mostly (or completely if no points happen to fall on the interface) incorrectly sits still. => parameter of level set from Hendrik (overshooting) => heaviside function in Chan-Vese.
+
+- The most straightforward way of implementing this is to use a contour plotting algorithm to locate and discretize the phi = 0 isocontour and then explicitly measure distances from it. Unfortunately, this straightforward reinitialization routine can be slow, especially if it needs to be done at every time step.
+If we move the interface in the normal direction using equation (6.1) with a = 1, the interface eventually crosses over x, changing the local value of phi from positive to negative. If we keep a time history of the local values of phi at x, we can find the exact time when phi was equal to zero using interpolation in time.
+7.4 The Reinitialization Equation: take intensity function f(x) as the source term and solve for the steady state solution.
