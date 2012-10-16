@@ -4,14 +4,14 @@ Euler model boundary by an implicit level set function which is usually a sign d
 - Heaviside in Chan-Vese; conversion using finite elements as oppose to finite difference (mesh vs voxel). first extract mesh using EMC.
 
 - Chan-Vese operates on voxel data. parameter estimation, add user force terms as source or sink or spring force.
-Or prescribed external velocity field.
+Or prescribed external velocity field. considering the tool shapes e.g. shield (damp) to prevent flow in one direction.
 
 - graph cut: works on voxel data. put anchors, weight to make the cut run through it.
 
 - convert between voxel and mesh. marching cube, convert back. feature detection => extended marching cube.
 data structure: store all information.
 
-- gradient field, signed distance field.
+- particle system vs. voxel vs. mesh, gradient field, signed distance field.
 
 - Chan-vese: he use existing itk framework. He modified to make the navigation bar and parameter config bar. However, he did not use Spring force in ITK.
 
