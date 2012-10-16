@@ -4,7 +4,7 @@ Euler model boundary by an implicit level set function which is usually a sign d
 - Heaviside in Chan-Vese; conversion using finite elements as oppose to finite difference (mesh vs voxel). first extract mesh using EMC.
 
 - Chan-Vese operates on voxel data. parameter estimation, add user force terms as source or sink or spring force.
-Or prescribed external velocity field. considering the tool shapes e.g. shield (damp) to prevent flow in one direction.
+Or prescribed external velocity field (advection, rigid body rotation, turbulent etc.). considering the tool shapes e.g. shield (damp) to prevent flow in one direction.
 
 - graph cut: works on voxel data. put anchors, weight to make the cut run through it.
 
